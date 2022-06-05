@@ -1,3 +1,37 @@
+<?php
+    // Check if User Coming From A Request
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        
+        // Assign Variables
+        $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+        
+        // If No Errors Send The Email [ mail(To, Subject, Message, Headers, Parameters) ]
+        
+        // $headers = 'From: ' . $email . '\r\n';
+        $headers = 'From: advva@rs018.webhostbox.net' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+        $myEmail = 'info@advva.com';
+        $subject = 'Contact Form';
+        $message = "<html><body>";
+        $message .= "<div>Email: </div>" . strip_tags($_POST['email']) ."</br>";
+        $message .= "</body></html>";
+        
+        if (empty($formErrors)) {
+            
+            mail($myEmail, $subject, $message, $headers);
+            
+            $email = '';
+            
+            $success = '<div class="alert alert-success alert-dismissible" role="alert">
+                          
+                          We Have Recieved Your Message
+                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>';
+            
+        }
+        
+    }
+?>
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -244,7 +278,22 @@
                   <h5>You dont have subscribe yet?</h5>
                   <h3 class="text-black my-4 w-md-75 w-100">Subsctibe to get the</br>latest news about us</h3>
                   <p>Advva Deals Mobile App. gets you the lowest price for your daily needs in your areas.</p>
-                  <input class="emailInput w-md-75 w-100 mt-5" type="email" placeholder="Your Email Address"><input type="submit" class="submitButton">
+                  <form id="formtwo" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
+                    <?php if (! empty($formErrors)) { ?>
+                    <div class="alert alert-danger alert-dismissible" role="alert">
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true"></span>
+                        </button>
+                        <?php
+                            foreach($formErrors as $error) {
+                                echo $error . '<br/>';
+                            }
+                        ?>
+                    </div>
+                    <?php } ?>
+                    <?php if (isset($success)) { echo $success; } ?>
+                    <input class="emailInput w-md-75 w-100 mt-5" type="email" placeholder="Your Email Address" value="<?php if (isset($email)) { echo $email; } ?>"><input type="submit" class="submitButton">
+                  </form>
                 </div>
                 <div class="col-md-7 text-center mt-md-0 mt-5">
                   <img class="image2" src="/img/Mobile3.png" alt="Advva App">
