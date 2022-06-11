@@ -139,7 +139,7 @@ gsap.from(".gsap1", {
     end: "bottom 0%",
     toggleActions: "play reset play reset"
   },
-  x: -500,
+  x: -1000,
   duration: 1
 });
 gsap.from(".gsap2", {
@@ -149,7 +149,47 @@ gsap.from(".gsap2", {
     end: "bottom 0%",
     toggleActions: "play reset play reset"
   },
-  x: -500,
+  x: -2000,
+  duration: 1
+});
+gsap.from(".gsap4", {
+  scrollTrigger: {
+    trigger: ".gsap4",
+    start: "top bottom",
+    end: "bottom 0%",
+    toggleActions: "play reset play reset"
+  },
+  x: -3000,
+  duration: 1
+});
+gsap.from(".gsap5", {
+  scrollTrigger: {
+    trigger: ".gsap5",
+    start: "top bottom",
+    end: "bottom 0%",
+    toggleActions: "play reset play reset"
+  },
+  x: -4000,
+  duration: 1
+});
+gsap.from(".gsap6", {
+  scrollTrigger: {
+    trigger: ".gsap6",
+    start: "top bottom",
+    end: "bottom 0%",
+    toggleActions: "play reset play reset"
+  },
+  x: -5000,
+  duration: 1
+});
+gsap.from(".gsap7", {
+  scrollTrigger: {
+    trigger: ".gsap7",
+    start: "top bottom",
+    end: "bottom 0%",
+    toggleActions: "play reset play reset"
+  },
+  x: -6000,
   duration: 1
 });
 gsap.from(".image5", {

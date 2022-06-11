@@ -73,6 +73,9 @@ button{
 }
 
 @media (max-width:768px) {
+	.gallery-section {
+		grid-template-columns: 1fr !important;
+	}
 	.image1 {
 		max-width: 200%;
 		height: auto;
@@ -386,10 +389,10 @@ body.light .progress-wrap svg.progress-circle path {
 	height: 13px;
 }
 .thirdSection {
-	min-height: 680px;
+	min-height: 700px;
 }
 .fourthSection {
-	background: #D0ECC0;
+	background: #ECD0C0;
 	min-height: 242px;
 }
 .sixthSection {
@@ -634,3 +637,160 @@ footer {
 	100% { transform: rotate(0); }
   }
   /* Bell - END */
+.gallery-section {
+	display: grid;
+  	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.gallery-item {
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100% !important;
+	height: 100% !important;
+	background-position: center center;
+	aspect-ratio: 1;
+}
+.gallery-item1 {
+	background-image: url('/img/gallery1.jpeg');
+}
+.gallery-item2 {
+	background-image: url('/img/gallery2.jpeg');
+}
+.gallery-item3 {
+	background-image: url('/img/gallery3.jpeg');
+}
+.gallery-item4 {
+	background-image: url('/img/gallery4.jpeg');
+}
+.gallery-item5 {
+	background-image: url('/img/gallery5.jpeg');
+}
+.gallery-item6 {
+	background-image: url('/img/gallery6.jpeg');
+}
+.gallery-item7 {
+	background-image: url('/img/gallery7.jpeg');
+}
+.gallery-item8 {
+	background-image: url('/img/gallery8.jpeg');
+}
+.gallery-text-bg1.active { 
+    background-color:#fff; 
+}
+.gallery-text-bg2.active { 
+    background-color:#D0D0D0; 
+}
+.gallery-text-bg3.active { 
+    background-color:#fff; 
+}
+.gallery-text-bg4.active { 
+    background-color:#92FF85; 
+}
+.gallery-text-bg5.active { 
+    background-color:#FF7878; 
+}
+.gallery-text-bg6.active { 
+    background-color:#fff; 
+}
+.gallery-text-bg7.active { 
+    background-color:#28CBFF; 
+}
+.gallery-text-bg8.active { 
+    background-color:#fff; 
+}
+.gallery-text-bg1:hover { 
+    background-color:#fff; 
+}
+.gallery-text-bg2:hover { 
+    background-color:#D0D0D0; 
+}
+.gallery-text-bg3:hover { 
+    background-color:#fff; 
+}
+.gallery-text-bg4:hover { 
+    background-color:#92FF85; 
+}
+.gallery-text-bg5:hover { 
+    background-color:#FF7878; 
+}
+.gallery-text-bg6:hover { 
+    background-color:#fff; 
+}
+.gallery-text-bg7:hover { 
+    background-color:#28CBFF; 
+}
+.gallery-text-bg8:hover { 
+    background-color:#fff; 
+}
+
+.gallery-text {
+	color: #fff;
+}
+.gallery-text.active { 
+    
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.gallery-text1.active {
+	background-image: url('/img/gallery1.jpeg');
+}
+.gallery-text2.active {
+	background-image: url('/img/gallery2.jpeg');
+}
+.gallery-text3.active {
+	background-image: url('/img/gallery3.jpeg');
+}
+.gallery-text4.active {
+	background-image: url('/img/gallery4.jpeg');
+}
+.gallery-text5.active {
+	background-image: url('/img/gallery5.jpeg');
+}
+.gallery-text6.active {
+	background-image: url('/img/gallery6.jpeg');
+}
+.gallery-text7.active {
+	background-image: url('/img/gallery7.jpeg');
+}
+.gallery-text8.active {
+	background-image: url('/img/gallery8.jpeg');
+}
+.gallery-text-bg:hover > .gallery-text { 
+    
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.gallery-text-bg1:hover > .gallery-text {
+	background-image: url('/img/gallery1.jpeg');
+}
+.gallery-text-bg2:hover > .gallery-text {
+	background-image: url('/img/gallery2.jpeg');
+}
+.gallery-text-bg3:hover > .gallery-text {
+	background-image: url('/img/gallery3.jpeg');
+}
+.gallery-text-bg4:hover > .gallery-text {
+	background-image: url('/img/gallery4.jpeg');
+}
+.gallery-text-bg5:hover > .gallery-text {
+	background-image: url('/img/gallery5.jpeg');
+}
+.gallery-text-bg6:hover > .gallery-text {
+	background-image: url('/img/gallery6.jpeg');
+}
+.gallery-text-bg7:hover > .gallery-text {
+	background-image: url('/img/gallery7.jpeg');
+}
+.gallery-text-bg8:hover > .gallery-text {
+	background-image: url('/img/gallery8.jpeg');
+}
+.gallery-text-bg.active:hover, .gallery-text-bg.active:hover > .gallery-text {
+	background: none !important;
+	color: #fff !important;
+	-webkit-text-fill-color: unset !important;
+}
