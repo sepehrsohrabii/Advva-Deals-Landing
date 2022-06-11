@@ -67,16 +67,16 @@
               <div class="col text-end d-none d-md-inline">
                 <ul class="nav justify-content-end align-items-center">
                     <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#"><h6>About Us</h6></a>
+                      <a class="nav-link" aria-current="page" href="#footer"><h6>About Us</h6></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"><h6>How It Works</h6></a>
+                      <a class="nav-link" href="#secondSection"><h6>How It Works</h6></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"><h6>FAQ</h6></a>
+                      <a class="nav-link" href="#FAQ"><h6>FAQ</h6></a>
                     </li>
                     <li class="nav-item ms-5">
-                        <button>Get App</button>
+                        <a href="#thirdSection"><button>Get App</button></a>
                     </li>
                 </ul>
               </div>
@@ -90,10 +90,10 @@
                 </button>
                 <div class="navbar-new" id="toggle-nav">
                   <ul id="navlinks">
-                    <li><a data-text="1" href="#">About Us</a></li>
-                    <li><a data-text="2" href="#">How It Works</a></li>
-                    <li><a data-text="3" href="#">FAQ</a></li>
-                    <li class="text-start mt-4"><button data-text="4">Get App</button></li>
+                    <li><a data-text="1" href="#footer">About Us</a></li>
+                    <li><a data-text="2" href="#secondSection">How It Works</a></li>
+                    <li><a data-text="3" href="#FAQ">FAQ</a></li>
+                    <li class="text-start mt-4"><a href="#thirdSection"><button data-text="4">Get App</button></a></li>
                   </ul>
                 </div>
                 <div id="bg-circle"></div>
@@ -116,11 +116,11 @@
                 <div class="row">
                     <div class="col-md-5 col-12 order-md-0 order-1 text-center text-md-start">
                         <h5 class="gsap1 with-line"> Advva Deals</h5>
-                        <h1 class="mt-4">Up to 80% OFF on</br>Almost All Your<br>Daily Needs.</h1>
-                        <h3 class="gsap2 mt-4">Are You Serious!!!!</h3>
-                        <p class="my-4 w-md-75 px-4 px-md-0">Advva Deals Mobile App. gets you the lowest price for your daily needs in your areas.</p>
-                        <a class="dl-button mt-5 me-3" href="#"><img src="/img/google-play.png" alt="Google Play Download Button" height="46"></a>
-                        <a class="dl-button mt-5" href="#"><img src="/img/App-Store.svg" alt="App Store Download Button" height="46"></a>
+                        <h1 class="mt-4 gsap2">Up to 80% OFF on</br>Almost All Your<br>Daily Needs.</h1>
+                        <h3 class="gsap4 mt-4">Are You Serious!!!!</h3>
+                        <p class="gsap5 my-4 w-md-75 px-4 px-md-0">Advva Deals Mobile App. gets you the lowest price for your daily needs in your areas.</p>
+                        <a class="gsap6 dl-button mt-5 me-3" href="#"><img src="/img/google-play.png" alt="Google Play Download Button" height="46"></a>
+                        <a class="gsap7 dl-button mt-5" href="#"><img src="/img/App-Store.svg" alt="App Store Download Button" height="46"></a>
                     </div>
                     <div class="col-md-7 col-12 order-md-1 order-0 imgBox">
                         <img class="image3 position-absolute" src="/img/gudey.png" alt="Gudey" width="1000px">
@@ -131,7 +131,7 @@
             </div>
           </div>
           <!-- Second Section -->
-          <div class="section secondSection">
+          <div class="section secondSection" id="secondSection">
             <div class="container">
                 <div class="row">
                     <div class="col pb-5">
@@ -160,7 +160,7 @@
           <!-- Divider -->
           <div class="section dividerSection"></div>
           <!-- Third Section -->
-          <div class="section thirdSection container d-flex align-items-center">
+          <div class="section thirdSection container d-flex align-items-center pb-5" id="thirdSection">
             <div class="row mb-5">
               <div class="col-md-7 col-12 imgBox">
                 <img class="image6 position-absolute" src="/img/Mobile2.png" alt="Advva App" height="600px">
@@ -174,11 +174,39 @@
               </div>
             </div>
           </div>
+          <div class="section w-100">
+            <div class="gallery-section">
+                <div class="gallery-item gallery-item1">
+                  <h1 class="w-100 h-100 d-flex align-items-center justify-content-center gallery-text-bg gallery-text-bg1"><span class="gallery-text gallery-text1">Restaurant & Bar</span></h1>
+                </div>
+                <div class="gallery-item gallery-item2">
+                  <h1 class="w-100 h-100 d-flex align-items-center justify-content-center gallery-text-bg gallery-text-bg2 active"><span class="gallery-text gallery-text2 active">Nightlife</span></h1>
+                </div>
+                <div class="gallery-item gallery-item3">
+                  <h1 class="w-100 h-100 d-flex align-items-center justify-content-center gallery-text-bg gallery-text-bg3"><span class="gallery-text gallery-text3">Art & Entertainment</span></h1>
+                </div>
+                <div class="gallery-item gallery-item4">
+                  <h1 class="w-100 h-100 d-flex align-items-center justify-content-center gallery-text-bg gallery-text-bg4 active"><span class="gallery-text gallery-text4 active">Beauty & Spa</span></h1>
+                </div>
+                <div class="gallery-item gallery-item5">
+                  <h1 class="w-100 h-100 d-flex align-items-center justify-content-center gallery-text-bg gallery-text-bg5 active"><span class="gallery-text gallery-text5 active">Automative</span></h1>
+                </div>
+                <div class="gallery-item gallery-item6">
+                  <h1 class="w-100 h-100 d-flex align-items-center justify-content-center gallery-text-bg gallery-text-bg6"><span class="gallery-text gallery-text6">Hotel & Travel</span></h1>
+                </div>
+                <div class="gallery-item gallery-item7">
+                  <h1 class="w-100 h-100 d-flex align-items-center justify-content-center gallery-text-bg gallery-text-bg7 active"><span class="gallery-text gallery-text7 active">Health & Medical</span></h1>
+                </div>
+                <div class="gallery-item gallery-item8">
+                  <h1 class="w-100 h-100 d-flex align-items-center justify-content-center gallery-text-bg gallery-text-bg8"><span class="gallery-text gallery-text8">Pets</span></h1>
+                </div>            
+            </div>
+          </div>
           <!-- Fourth Section -->
-          <div class="section fourthSection">
+          <div class="section fourthSection py-5">
             <div class="container">
               <div class="row">
-                <div class="col pb-5 mt-n-1">
+                <div class="col pb-4 mt-4">
                   <h1 class="gsap3 text-black text-center">Our Clients</h1>
                 </div>
               </div>
@@ -213,7 +241,7 @@
             </div>
           </div>
           <!-- FAQ Section -->
-          <div class="section container my-5 py-5 overflow-hidden">
+          <div class="section container my-5 py-5 overflow-hidden" id="FAQ">
             <div class="row my-md-5 mb-5">
               <div class="col-12 col-md-12 align-self-center text-center">
                 <h1 class="text-black">FAQs</h1>
@@ -319,7 +347,7 @@
           </div>
         </main>
         
-        <footer class="section d-flex align-items-center text-md-start text-center">
+        <footer class="section d-flex align-items-center text-md-start text-center" id="footer">
           <div class="container">
             <div class="row mt-5 pt-md-5 justify-content-between">
               <div class="col-md-2">
